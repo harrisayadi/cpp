@@ -278,6 +278,7 @@ return 0;
 ```
 Q22. What's the code output? 
 
+``` cpp
 // This program uses two variables with the name number.
 #include <iostream>
 using namespace std;
@@ -299,7 +300,8 @@ int main()
   cout << "Your first number was " << number << endl;
   return 0;
 }
-  
+```
+
 Q23. What will the following program segments display?
 ```cpp
 A) 
