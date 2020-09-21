@@ -333,8 +333,52 @@ else
   cout << "It is false!\n";
 ```
 
-  
-Q24. Rewrite the following program. Use a switch statement instead of the if/else if statement.
+Q24. Define the following arrays:
+
+```
+A) empNums , a 100-element array of int
+B) payRates , a 25-element array of float
+C) miles , a 14-element array of long
+```
+
+Q25. Define the following vectors:
+
+```
+A) empNums , a 100-element vector of int
+B) payRates , a 25-element vector of float
+C) miles , a 14-element vector of long
+```
+
+Q26. Define the following arrays:
+```
+A) ages , a 10-element array of int s initialized with the values 5, 7, 9, 14, 15, 17, 18, 19, 21, and 23.
+B) temps , a 7-element array of float s initialized with the values 14.7, 16.3, 18.43, 21.09, 17.9, 18.76, and 26.7.
+C) alpha , an 8-element array of char s initialized with the values ‘J’, ‘B’, ‘L’, ‘A’, ‘*’, ‘$’, ‘H’, and ‘M’.
+```
+
+Q27. Define the following vectors:
+```
+A) ages , a 10-element vector of int s initialized with the values 5, 7, 9, 14, 15, 17, 18, 19, 21, and 23.
+B) temps , a 7-element vector of float s initialized with the values 14.7, 16.3, 18.43, 21.09, 17.9, 18.76, and 26.7.
+C) alpha , an 8-element vector of char s initialized with the values ‘J’, ‘B’, ‘L’, ‘A’, ‘*’, ‘$’, ‘H’, and ‘M’.
+```
+
+Q28. Given the following array definition:
+```
+int values[] = {2, 6, 10, 14};
+```
+What does each of the following display?
+```
+A) cout << values[2];
+B) cout << ++values[0];
+C) cout << values[1]++;
+D) x = 2; cout << values[++x];
+```
+Q29. Define a two-dimensional array of int s named grades . It should have 3 rows and 2 columns.
+
+Q30. Define a two-dimensional vector of int s named grades . It should have 3 rows and 2 columns.
+
+Q31. Rewrite the following program. Use a switch statement instead of the if/else if statement.
 ``` cpp
 #include <iostream>
 using namespace std;
@@ -360,7 +404,7 @@ int main()
   return 0;
 }
 ```
-Q25. Write a C++ program to enable the conversion between US dollars and Canadian Dollars. The program will first ask for user input to decide whether the user would like to convert USD to CAD, or the other way around. Then the program will ask for user input to indicate the amount of money in the original currency, and then output the converted amount in the targeted currency. 
+Q32. Write a C++ program to enable the conversion between US dollars and Canadian Dollars. The program will first ask for user input to decide whether the user would like to convert USD to CAD, or the other way around. Then the program will ask for user input to indicate the amount of money in the original currency, and then output the converted amount in the targeted currency. 
 
 Examples:
 
