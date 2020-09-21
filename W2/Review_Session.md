@@ -188,17 +188,191 @@ if (y <= x)
 else
   cout << "x is the greater.\n";
 ```
-Q14. The following code is used in a bookstore program to determine how many discount coupons a customer gets. Complete the table that appears after the
-program.
+Q14. The following code is used in a bookstore program to determine how many discount coupons a customer gets. What will be the output if the `numBooks` s 1, 3, 4, 5 or 10?
 ``` cpp
 int numBooks, numCoupons;
 cout << "How many books are being purchased? ";
 cin >> numBooks;
 if (numBooks < 1)
-numCoupons = 0;
+  numCoupons = 0;
 else if (numBooks < 3)
-numCoupons = 1;
+  numCoupons = 1;
 else if (numBooks < 5)
-numCoupons = 2;
+  numCoupons = 2;
+else
+  numCoupons = 3;
+  cout << "The number of coupons to give is " << numCoupons << endl;
+```
+Q15. Evaluate the following expressions assuming the variables a = 2 , b = 4 , and c = 6 . 
+``` cpp
+a == 4 || b > 2 T F
+6 <= c && a > 3 T F
+1 != b && c != 3 T F
+a >= -1 || a <= b T F
+!(a > 2)
+```
+Q16. Write an if statement that prints the message “The number is valid” if the variable `speed` is within the range 0 through 200.
+
+Q17. Rewrite the following if/else statements as conditional expressions:
+
+A) 
+```cpp 
+if (x > y)
+  z = 1;
+else
+  z = 20;
+```
+B) 
+```cpp
+if (temp > 45)
+  population = base * 10;
+else
+  population = base * 2;
+```
+Q18. The following statements use conditional expressions. Rewrite each with an if/else statement.
+```
+A) j = k > 90 ? 57 : 12;
+B) factor = x >= 10 ? y * 22 : y * 35;
+C) total += count == 1 ? sales : count * sales;
+D) cout << (((num % 2) == 0) ? "Even \ n" : "Odd\n");
 ```
 
+Q19. Explain why you cannot convert the following if/else if statement into a switch statement.
+
+```cpp
+if (temp == 100)
+  x = 0;
+else if (population > 1000)
+  x = 1;
+else if (rate < .1)
+  x = −1;
+```
+Q20. What is wrong with the following switch statement?
+
+``` cpp
+switch (temp)
+{
+case temp < 0 : cout << "Temp is negative.\n";
+break;
+case temp == 0: cout << "Temp is zero.\n";
+break;
+case temp > 0 : cout << "Temp is positive.\n";
+break;
+}
+```
+Q21. Complete the following program skeleton by writing a switch statement that displays “one” if the user has entered 1, “two” if the user has entered 2, and
+“three” if the user has entered 3. If a number other than 1, 2, or 3 is entered, the program should display an error message.
+``` cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+int userNum;
+cout << "Enter one of the numbers 1, 2, or 3: ";
+cin >> userNum;
+//
+// Write the switch statement here.
+//
+return 0;
+}
+```
+Q22. What's the code output? 
+
+// This program uses two variables with the name number.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+// Define a variable named number.
+  int number;
+
+  cout << "Enter a number greater than 0: ";
+  cin >> number;
+  if (number > 0)
+  {
+     int number; // Another variable named number.
+     cout << "Now enter another number: ";
+     cin >> number;
+     cout << "The second number you entered was "<< number << endl;
+  }
+  cout << "Your first number was " << number << endl;
+  return 0;
+}
+  
+Q23. What will the following program segments display?
+```cpp
+A) 
+x = 2;
+y = x++;
+cout << x << y;
+B)
+x = 2;
+y = ++x;
+cout << x << y;
+C)
+x = 2;
+y = 4;
+cout << x++ << −−y;
+D)
+x = 2;
+y = 2 * x++;
+cout << x << y;
+
+E)
+x = 99;
+if (x++ < 100)
+  cout "It is true!\n";
+else
+  cout << "It is false!\n";
+F) 
+x = 0;
+if (++x)
+  cout << "It is true!\n";
+else
+  cout << "It is false!\n";
+```
+
+  
+Q24. Rewrite the following program. Use a switch statement instead of the if/else if statement.
+``` cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+  int selection;
+  cout << "Which formula do you want to see?\n\n";
+  cout << "1. Area of a circle\n";
+  cout << "2. Area of a rectangle\n";
+  cout << "3. Area of a cylinder\n"
+  cout << "4. None of them!\n";
+  cin >> selection;
+  if (selection == 1)
+    cout << "Pi times radius squared\n";
+  else if (selection == 2)
+    cout << "Length times width\n";
+  else if (selection == 3)
+    cout << "Pi times radius squared times height\n";
+  else if (selection == 4)
+    cout << "Well okay then, good bye!\n";
+  else
+    cout << "Not good with numbers, eh?\n";
+  return 0;
+}
+```
+Q25. Write a C++ program to enable the conversion between US dollars and Canadian Dollars. The program will first ask for user input to decide whether the user would like to convert USD to CAD, or the other way around. Then the program will ask for user input to indicate the amount of money in the original currency, and then output the converted amount in the targeted currency. 
+
+Examples:
+
+```
+Please enter 0 to indicate USD->CAD conversion, or enter 1 to indicate CAD->USD conversion: 0
+Please enter the amount of USD dollars: XXX
+They can be converted to YYY CAD.
+```
+```
+Please enter 0 to indicate USD->CAD conversion, or enter 1 to indicate CAD->USD conversion: 1
+Please enter the amount of CAD dollars: XXX
+They can be converted to YYY USD.
+```
+
+Here XXX represent the numerical input from user, and YYY represent the calculated numerical value by the program. You can assume **1 United States Dollar equals 1.32 Canadian Dollar** in this question. 
