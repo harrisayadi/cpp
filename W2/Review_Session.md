@@ -376,7 +376,7 @@ D) x = 2; cout << values[++x];
 ```
 Q29. Define a two-dimensional array of int s named grades . It should have 3 rows and 2 columns.
 
-Q30. Define a two-dimensional vector of int s named grades . It should have 3 rows and 2 columns.
+Q30. Define a two-dimensional vector of int s named grades.
 
 Q31. Rewrite the following program. Use a switch statement instead of the if/else if statement.
 ``` cpp
