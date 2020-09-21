@@ -188,7 +188,7 @@ if (y <= x)
 else
   cout << "x is the greater.\n";
 ```
-Q14. The following code is used in a bookstore program to determine how many discount coupons a customer gets. What will be the output if the `numBooks` s 1, 3, 4, 5 or 10?
+Q14. The following code is used in a bookstore program to determine how many discount coupons a customer gets. What will be the output if the `numBooks` is 1, 3, 4, 5 or 10?
 ``` cpp
 int numBooks, numCoupons;
 cout << "How many books are being purchased? ";
@@ -205,10 +205,10 @@ else
 ```
 Q15. Evaluate the following expressions assuming the variables a = 2 , b = 4 , and c = 6 . 
 ``` cpp
-a == 4 || b > 2 T F
-6 <= c && a > 3 T F
-1 != b && c != 3 T F
-a >= -1 || a <= b T F
+a == 4 || b > 2 
+6 <= c && a > 3
+1 != b && c != 3 
+a >= -1 || a <= b 
 !(a > 2)
 ```
 Q16. Write an if statement that prints the message “The number is valid” if the variable `speed` is within the range 0 through 200.
