@@ -55,7 +55,7 @@ B)
 ``` cpp
 int v = 10;
 do
-cout << v << end1;
+cout << v << endl;
 while (v < 5);
 ```
 
