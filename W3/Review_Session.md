@@ -282,7 +282,7 @@ Q20. Modify the program from Q19 so that it also finds the average number of hou
 Q21. Using C++ style string to write a program that reads a sentence as input and converts each word of the sentence following the rule below:
 
 - For every word in the sentence, the first letter is relocated the end of the word.
-- Then append the string “ABC” to the word. 
+- Then append the string “KPU” to the word. 
 
 More requirements:
 - All letters in the output should be uppercase. 
@@ -294,6 +294,6 @@ Sample Run:
 
 ```
 Please enter the original sentence: i LOVE to program
-Translated: IABC OVELABC OTABC ROGRAMPABC
+Translated: IKPU OVELKPU OTKPU ROGRAMPKPU
 ```
 
