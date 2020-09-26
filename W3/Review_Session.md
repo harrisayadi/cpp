@@ -1,5 +1,5 @@
 
-# Review Session for Section 7, 8 and 9 (C76-C81)
+# Review Session for Section 9 and 10
 
 ## Correction and Clarification
 - In the Coding Exercise 14, the solution can be further improved as 
@@ -94,7 +94,7 @@ int x;
 for (x = 5; x <= 14; x += 3)
   cout << x << endl;
   cout << x << endl;
-
+```
 Q7. Write a for loop that displays your name 10 times.
 
 Q8. Write a for loop that displays all of the odd numbers, 1 through 49.
@@ -200,6 +200,7 @@ B) What happens if you enter a float such as 2.99 instead of an integer for valu
 
 C) Modify the code so that it computes the mean of the consecutive positive integers n, n+1, n+2, . . . , m, where the user chooses n and m. For example, if the user picks 3 and 9, then the program should find the mean of 3, 4, 5, 6, 7, 8, and 9, which is 6.
 
+# Homework 
 Q19. 
 
 ``` cpp
