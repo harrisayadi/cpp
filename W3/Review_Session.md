@@ -112,7 +112,7 @@ cout << "The sum of those numbers is " << y << endl;
 ```
 Q10. Write a statement that will convert the contents of the char variable `big` to lowercase. The converted value should be assigned to the variable `little` .
 
-Q11. Write an if statement that will display the word “digit” if the variable `ch` contains a numeric digit. Otherwise, it should display “Not a digit.”
+Q11. Write an if statement that will display the word “digit” if the char variable `ch` contains a numeric digit. Otherwise, it should display “Not a digit.”
 
 Q12. What is the output of the following statement?
 ```cpp
