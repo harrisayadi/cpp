@@ -136,24 +136,8 @@ cout << string2 << endl;
 
 Q16. Write a statement that will copy the string “Beethoven” to the array `composer` .
 
-Q17. When complete, the following program skeleton will search for the string “ Windy ” in the array place . If place contains “Windy” the program will display
-the message “Windy found.” Otherwise it will display “Windy not found.”
-``` cpp
-#include <iostream>
-// include any other necessary header files
-using namespace std;
-int main()
-{
-    char place[] = "The Windy City";
-    // Complete the program. It should search the array place
-    // for the string "Windy" and display the message "Windy
-    // found" if it finds the string. Otherwise, it should
-    // display the message "Windy not found."
-    return 0;
-}
-```
 
-Q18. 
+Q17. 
 ``` cpp
 // This program has the user input a number n and then finds the
 // mean of the first n positive integers
@@ -201,7 +185,7 @@ B) What happens if you enter a float such as 2.99 instead of an integer for valu
 C) Modify the code so that it computes the mean of the consecutive positive integers n, n+1, n+2, . . . , m, where the user chooses n and m. For example, if the user picks 3 and 9, then the program should find the mean of 3, 4, 5, 6, 7, 8, and 9, which is 6.
 
 # Homework 
-Q19. 
+Q18. 
 
 ``` cpp
 
@@ -277,9 +261,9 @@ Please enter the number of hours worked by student 2 on day 2
 The average number of hours per day spent programming by student 2 is 11
 ```
 
-Q20. Modify the program from Q19 so that it also finds the average number of hours per day that a given student studies biology as well as programming. For each given student include two prompts, one for each subject. Have the program print out which subject the student, on average, spent the most time on.
+Q19. Modify the program from Q18 so that it also finds the average number of hours per day that a given student studies biology as well as programming. For each given student include two prompts, one for each subject. Have the program print out which subject the student, on average, spent the most time on.
 
-Q21. Using C++ style string to write a program that reads a sentence as input and converts each word of the sentence following the rule below:
+Q20. Using C++ style string to write a program that reads a sentence as input and converts each word of the sentence following the rule below:
 
 - For every word in the sentence, the first letter is relocated the end of the word.
 - Then append the string “KPU” to the word. 
