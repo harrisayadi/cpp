@@ -134,7 +134,7 @@ cout << string1 << endl;
 cout << string2 << endl;
 ```
 
-Q16. Write a statement that will copy the string “Beethoven” to the array composer .
+Q16. Write a statement that will copy the string “Beethoven” to the array `composer` .
 
 Q17. When complete, the following program skeleton will search for the string “ Windy ” in the array place . If place contains “Windy” the program will display
 the message “Windy found.” Otherwise it will display “Windy not found.”
