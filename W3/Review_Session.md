@@ -177,8 +177,8 @@ int main()
 }
 ```
 
-A) Why is the typecast operator needed to compute the mean in the statement mean = static_cast(float)(total)/value;? What do you think
-will happen if it is removed? Modify the code and try it. Record what happens. Make sure that you try both even and odd cases. Now put static_cast<float>total back in the program.
+A) Why is the typecast operator needed to compute the mean in the statement `mean = static_cast<float>(total)/value;`? What do you think
+will happen if it is removed? Modify the code and try it. Record what happens. Make sure that you try both even and odd cases. Now put `static_cast<float>total` back in the program.
 
 B) What happens if you enter a float such as 2.99 instead of an integer for value? Try it and record the results.
 
