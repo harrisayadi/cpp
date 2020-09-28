@@ -390,7 +390,7 @@ int main()
   cout << "Which formula do you want to see?\n\n";
   cout << "1. Area of a circle\n";
   cout << "2. Area of a rectangle\n";
-  cout << "3. Area of a cylinder\n"
+  cout << "3. Volume of a cylinder\n"
   cout << "4. None of them!\n";
   cin >> selection;
   if (selection == 1)
