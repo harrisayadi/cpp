@@ -97,9 +97,6 @@ void timesTen(int number){
 ```
 </details>
 
-
-Q5. Write a function prototype for the `timesTen` function you wrote in Q5.
-
 Q6. What is the output of the following program?
 ``` cpp
 #include <iostream>
