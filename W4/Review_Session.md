@@ -3,7 +3,7 @@
 
 ## Correction and Clarification
 
-Nothing to correct and clarify this week from the videos. This sectio is very important. Post questions in the discussion forum if you want to further clarification on certain topics.
+Nothing to correct and clarify this week from the videos. This section is very important and not easy. Post questions in the discussion forum if you want to further clarification on certain topics.
 
 
 ## Review Questions
@@ -196,6 +196,7 @@ void test (int first, int second, int third)
 ```
 
 Q16. The following program asks the user to enter two numbers. What is the output of the program if the user enters 12 and 14?
+
 ``` cpp
 #include <iostream>
 using namespace std;
@@ -261,6 +262,7 @@ int manip(int val1, double val2)
 Q18. Design a recursive function to calculate the summation of all integers from 1 to `n` (`n`>=1).
 
 Q19. When an array name is passed to a function, what is actually being passed?
+
 Q20. When used as function arguments, are arrays passed by value?
 
 Q21. What is the output of the following program? 
