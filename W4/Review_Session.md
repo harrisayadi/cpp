@@ -228,6 +228,12 @@ void showVar()
 
 Q12. What kinds of values may be specified as default arguments?
 
+<details>
+<summary>Click to show the answer!</summary>
+	Trailing parameters. If a parameter has a default value, every parameter that comes after MUST have default values. 
+</details>
+
+
 Q13. Write the prototype and header for a function called `compute` . The function should have three parameters: an `int` , a `double` , and a `long` (not necessarily
 in that order). The int parameter should have a default argument of 5, and the long parameter should have a default argument of 65536. The double parameter should not have a default argument.
 
