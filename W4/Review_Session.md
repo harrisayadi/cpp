@@ -165,19 +165,23 @@ int main()
 // notation, and the decimal point should always display.
 ```
 
-<details> 
+<details>
+
+<summary> Click me to show the code below!</summary>
+
+``` cpp
+void showDollars(double dollars){
 	
-	<summary>Click to show the code! </summary>
-	``` cpp
-	void showDollars(double dollars){
-	
-		cout <<fixed<<setprecision(1);
-		cout<< "Your wages are $" << dollars<<endl;
+	cout <<fixed<<setprecision(2);
+	cout<< "Your wages are $" << dollars<<endl;
 	}
-	
-	```
+
+```
 </details>
+
+
 Q9. What is the difference between a static local variable and a global variable?
+
 
 Q10. What is the output of the following program?
 
