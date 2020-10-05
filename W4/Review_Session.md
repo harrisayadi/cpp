@@ -104,6 +104,7 @@ void func1(double a, int b)
 
 Q8. The following program skeleton asks for the number of hours you’ve worked and your hourly pay rate. It then calculates and displays your wages. The
 function showDollars , which you are to write, formats the output of the wages.
+
 ``` cpp
 #include <iostream>
 using namespace std;
@@ -130,6 +131,7 @@ int main()
 Q9. What is the difference between a static local variable and a global variable?
 
 Q10. What is the output of the following program?
+
 ``` cpp
 #include <iostream>
 using namespace std;
@@ -151,7 +153,8 @@ cout << var << endl;
 ```
 
 Q11. What is the output of the following program?
-```cpp
+
+``` cpp
 #include <iostream>
 using namespace std;
 void showVar(); // Function prototype
@@ -171,10 +174,13 @@ void showVar()
 ```
 
 Q12. What kinds of values may be specified as default arguments?
+
 Q13. Write the prototype and header for a function called `compute` . The function should have three parameters: an `int` , a `double` , and a `long` (not necessarily
 in that order). The int parameter should have a default argument of 5, and the long parameter should have a default argument of 65536. The double parameter should not have a default argument.
+
 Q14. Write the prototype and header for a function called `calculate` . The function should have three parameters: an `int` , a reference to a `double` , and a `long` (not necessarily in that order.) Only the int parameter should have a default
 argument, which is 47.
+
 Q15. What is the output of the following program?
 ``` cpp
 #include <iostream>
