@@ -92,7 +92,9 @@ void timesTen(int number){
 	cout << number*10 << endl;
 	
 	
-}```
+}
+
+```
 </details>
 
 
