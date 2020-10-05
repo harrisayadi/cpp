@@ -1,408 +1,283 @@
 
-# Review Session for Section 11
+# Review Session for Section 9 and 10
 
 ## Correction and Clarification
+- In the Coding Exercise 14, the solution can be further improved as 
+``` cpp
+int calculate_sum() {
 
-Nothing to correct and clarify this week from the videos. This section is very important and not easy. Post questions in the discussion forum if you want to further clarification on certain topics.
+    int sum{0};
+    for (int i {0}; i<=15; ++i){
+        sum += (i%2) * i;
+        
+    }
+    return sum;
+}
+```
+- In the Coding Exercise 15, the solution can be further improved as 
 
+``` cpp
+
+#include <vector>
+using namespace std;
+
+int count_divisible() {
+    
+    vector<int> vec {1,3,5,15,16,17,18,19,20,21,25,26,27,30,50,55,56,58,100,200,300,400,500,600,700};
+
+    int count{};
+    for (auto i: vec){
+        count += (i % 3 ==0 || i % 5 == 0);
+    }
+    return count;
+}
+
+```
 
 ## Review Questions
+Q1. Using `while`-loop Write an input validation loop that asks the user to enter a number in the range of 10 through 25.
 
-Q1. Is the following a function header or a function call?
+Q2. Using `do-while`-loop to write an input validation loop that asks the user to enter ‘Y’, ‘y’, ‘N’, or ‘n’.
+
+Q3. What will the following program segments display?
+
+A) 
+``` cpp
+int count = 10;
+do
+{
+  cout << "Hello World\n";
+  count++;
+} while (count < 1);
+``` 
+B) 
 
 ``` cpp
-calcTotal();
+int v = 10;
+do
+cout << v << endl;
+while (v < 5);
 ```
-Q2. Is the following a function header or a function call?
 
+C) 
 ``` cpp
-void showResults()
+int count = 0, number = 0, limit = 4;
+do
+{
+  number += 2;
+  count++;
+} while (count < limit);
+cout << number << " " << count << endl;
 ```
 
-Q3.  What will the output of the following program be if the user enters 10?
+Q4. Name the three expressions that appear inside the parentheses in the for loop’s header.
+
+Q5. You want to write a for loop that displays “I love to program” 50 times. Assume that you will use a counter variable named `count` . Write the loop. 
+
+Q6. What will the following program segments display?
+
+A) 
 ``` cpp
-#include <iostream>
-using namespace std;
-void func1()
+for (int count = 0; count < 6; count++)
+  cout << (count + count);
+```
+
+B) 
+``` cpp
+for (int value = −5; value < 5; value++)
+  cout << value;
+```
+
+C) 
+``` cpp
+int x;
+for (x = 5; x <= 14; x += 3)
+  cout << x << endl;
+  cout << x << endl;
+```
+Q7. Write a for loop that displays your name 10 times.
+
+Q8. Write a for loop that displays all of the odd numbers, 1 through 49.
+
+Q9. In the following program segment, which variable is the counter variable and which is the accumulator?
+``` cpp
+int a, x, y = 0;
+for (x = 0; x < 10; x++)
 {
-  cout << "Able was I\n";
-}
-void func2()
-{
-  cout << "I saw Elba\n";
-}
-int main()
-{
-  int input;
   cout << "Enter a number: ";
-  cin >> input;
-  if (input < 10)
-  {
-      func1();
-      func2();
-  }
-  else
-  {
-    func2();
-    func1();
-  }
-  return 0;
+  cin >> a;
+  y += a;
 }
+cout << "The sum of those numbers is " << y << endl;
 ```
-Q4.Indicate which of the following is the function prototype, the function header, and the function call:
-``` cpp
-void showNum(double num)
-void showNum(double);
-showNum(45.67);
+Q10. Write a statement that will convert the contents of the char variable `big` to lowercase. The converted value should be assigned to the variable `little` .
+
+Q11. Write an if statement that will display the word “digit” if the char variable `ch` contains a numeric digit. Otherwise, it should display “Not a digit.”
+
+Q12. What is the output of the following statement?
+```cpp
+  cout << toupper(tolower('A'));
 ```
-Q5. Write a function named `timesTen` . The function should have an integer parameter named `number` . When `timesTen` is called, it should display the product of number times ten. ( Note : just write the function. Do not write a
-complete program.)
+Q13. Write a loop that asks the user "Do you want to repeat the program or quit? (R/Q)" . The loop should repeat until the user has entered an R or Q (either uppercase or lowercase).
 
-<details>
-
-<summary> Click me to show the code below!</summary>
-
+Q14. What will the following program segment display?
+```cpp
+char dog[] = "Fido";
+cout << strlen(dog) << endl;
+```
+Q15. What will the following program segment display?
 ``` cpp
-//Write a function named timesTen . 
-//The function should have an integer parameter named number . 
-//When timesTen is called, it should display the product of number times ten. 
+char string1[16] = "Have a ";
+char string2[9] = "nice day";
+strcat(string1, string2);
+cout << string1 << endl;
+cout << string2 << endl;
+```
 
+Q16. Write a statement that will copy the string “Beethoven” to the array `composer` .
+
+
+Q17. 
+``` cpp
+// This program has the user input a number n and then finds the
+// mean of the first n positive integers
+
+// PLACE YOUR NAME HERE
 
 #include <iostream>
 using namespace std;
 
-void timesTen(int);
-
-
-
 int main()
 {
-  int inputNumber{};
-  cout << "Enter a number plz:\n";
-  cin >> inputNumber;
-  timesTen(inputNumber);
-	
-	
-  return 0;
-}
+	int value;		// value is some positive number n
+	int total = 0;	// total holds the sum of the first n positive numbers 
+	int number;		// the amount of numbers
+	float mean;		// the average of the first n positive numbers
 
-void timesTen(int number){
-	
-	
-	cout << number*10 << endl;
-	
-	
-}
+	cout << "Please enter a positive integer" << endl;
+	cin >> value;
 
-```
-</details>
+	if (value > 0)
+	{
+		for (number = 1; number <= value; number++)
+		{
+			total = total + number;
+		}	// curly braces are optional since there is only one statement
 
-Q6. What is the output of the following program?
-``` cpp
-#include <iostream>
-using namespace std;
-void showDouble(int); // Function prototype
-int main()
-{
-  int num;
-  for (num = 0; num < 10; num++)
-    showDouble(num);
-  return 0;
-}
-// Definition of function showDouble.
-void showDouble(int value)
-{
-  cout << value << "\t" << (value * 2) << endl;
-}
-```
-Q7. What is the output of the following program?
-``` cpp
-#include <iostream>
-using namespace std;
-void func1(double, int); // Function prototype
-int main()
-{
-  int x = 0;
-  double y = 1.5;
-  cout << x << " " << y << endl;
-  func1(y, x);
-  cout << x << " " << y << endl;
-  return 0;
-}
-
-void func1(double a, int b)
-{
-  cout << a << " " << b << endl;
-  a = 0.0;
-  b = 10;
-  cout << a << " " << b << endl;
-}
-```
-
-Q8. The following program skeleton asks for the number of hours you’ve worked and your hourly pay rate. It then calculates and displays your wages. The
-function showDollars , which you are to write, formats the output of the wages.
-
-``` cpp
-#include <iostream>
-using namespace std;
-void showDollars(double); // Function prototype
-int main()
-{
-  double payRate, hoursWorked, wages;
-  cout << "How many hours have you worked? "
-  cin >> hoursWorked;
-  cout << "What is your hourly pay rate? ";
-  cin >> payRate;
-  wages = hoursWorked * payRate;
-  showDollars(wages);
-  return 0;
-}
-// You must write the definition of the function showDollars
-// here. It should take one parameter of the type double.
-// The function should display the message "Your wages are $"
-// followed by the value of the parameter. It should be displayed
-// with 2 places of precision after the decimal point, in fixed
-// notation, and the decimal point should always display.
-```
-
-<details>
-
-<summary> Click me to show the code below!</summary>
-
-``` cpp
-void showDollars(double dollars){
-	
-	cout <<fixed<<setprecision(2);
-	cout<< "Your wages are $" << dollars<<endl;
+		mean = static_cast<float>(total) / value;	// note the use of the typecast
+													// operator here 
+		cout << "The mean average of the first " << value
+			 << " positive integers is " << mean << endl;
 	}
 
-```
-</details>
+	else
+		cout << "Invalid input - integer must be positive" << endl;
 
-
-Q9. What is the difference between a static local variable and a global variable?
-
-
-Q10. What is the output of the following program?
-
-``` cpp
-#include <iostream>
-using namespace std;
-void myFunc(); // Function prototype
-int main()
-{
-int var = 100;
-cout << var << endl;
-myFunc();
-cout << var << endl;
-return 0;
-}
-// Definition of function myFunc
-void myFunc()
-{
-int var = 50;
-cout << var << endl;
+	return 0;
 }
 ```
 
-Q11. What is the output of the following program?
+A) Why is the typecast operator needed to compute the mean in the statement `mean = static_cast<float>(total)/value;`? What do you think
+will happen if it is removed? Modify the code and try it. Record what happens. Make sure that you try both even and odd cases. Now put `static_cast<float>total` back in the program.
+
+B) What happens if you enter a float such as 2.99 instead of an integer for value? Try it and record the results.
+
+C) Modify the code so that it computes the mean of the consecutive positive integers n, n+1, n+2, . . . , m, where the user chooses n and m. For example, if the user picks 3 and 9, then the program should find the mean of 3, 4, 5, 6, 7, 8, and 9, which is 6.
+
+# Homework 
+Q18. 
 
 ``` cpp
+
+// This program finds the average time spent programming by a student
+// each day over a three day period.
+
+// PLACE YOUR NAME HERE
+
 #include <iostream>
 using namespace std;
-void showVar(); // Function prototype
-int main()
-{
-  for (int count = 0; count < 10; count++)
-  showVar();
-  return 0;
-}
-// Definition of function showVar
-void showVar()
-{
-  static int var = 10;
-  cout << var << endl;
-  var++;
-}
-```
-
-Q12. What kinds of values may be specified as default arguments?
-
-<details>
-<summary>Click to show the answer!</summary>
-	Trailing parameters. If a parameter has a default value, every parameter that comes after MUST have default values. 
-</details>
-
-
-Q13. Write the prototype and header for a function called `compute` . The function should have three parameters: an `int` , a `double` , and a `long` (not necessarily
-in that order). The int parameter should have a default argument of 5, and the long parameter should have a default argument of 65536. The double parameter should not have a default argument.
-
-Q14. Write the prototype and header for a function called `calculate` . The function should have three parameters: an `int` , a reference to a `double` , and a `long` (not necessarily in that order.) Only the int parameter should have a default
-argument, which is 47.
-
-Q15. What is the output of the following program?
-
-``` cpp
-#include <iostream>
-using namespace std;
-void test(int = 2, int = 4, int = 6);
 
 int main()
 {
-  test();
-  test(6);
-  test(3, 9);
-  test(1, 5, 7);
-  return 0;
-}
-void test (int first, int second, int third)
-{
-  first += 3;
-  second += 6;
-  third += 9;
-  cout << first << " " << second << " " << third << endl;
-}
-```
+	int numStudents;
+	float numHours, total, average;
+	int student, day = 0;	// these are the counters for the loops
 
-Q16. The following program asks the user to enter two numbers. What is the output of the program if the user enters 12 and 14?
+	cout << "This program will find the average number of hours a day"
+		 << " that a student spent programming over a long weekend\n\n";
+	cout << "How many students are there ?" << endl << endl;
+	cin >> numStudents;
 
-``` cpp
-#include <iostream>
-using namespace std;
-void func1(int &, int &);
-void func2(int &, int &, int &);
-void func3(int, int, int);
-int main()
-{
-int x = 0, y = 0, z = 0;
-cout << x << " " << y << " " << z << endl;
-func1(x, y);
-cout << x << " " << y << " " << z << endl;
-func2(x, y, z);
-cout << x << " " << y << " " << z << endl;
-func3(x, y, z);
-cout << x << " " << y << " " << z << endl;
-return 0;
-}
-void func1(int &a, int &b)
-{
-  cout << "Enter two numbers: ";
-  cin >> a >> b;
-}
-void func2(int &a, int &b, int &c)
-{
-  b++;
-  c−−;
-  a = b + c;
-}
-void func3(int a, int b, int c)
-{
-  a = b − c;
+	for (student = 1; student <= numStudents; student++)
+	{
+		total = 0;
+
+		for (day = 1; day <= 3; day++)
+		{
+			cout << "Please enter the number of hours worked by student "
+				 << student << " on day " << day << "." << endl;
+			cin >> numHours;
+
+			total = total + numHours;
+		}
+
+		average = total / 3;
+
+		cout << endl;
+		cout << "The average number of hours per day spent programming by "
+			 << "student " << student << " is " << average
+			 << endl << endl << endl;
+	}
+
+	return 0;
 }
 ```
+ Note that the inner loop of this program is always executed exactly three times—once for each day of the long weekend. Modify the code so that the inner loop iterates n times, where n is a positive integer input by the user. In other words, let the user decide how many days to consider just as they choose how many students to consider.
 
-Q17. What is the output of the following program?
-
-```cpp
-#include <iostream>
-using namespace std;
-int manip(int);
-int manip(int, int);
-int manip(int, double);
-int main()
-{
-  int x = 2, y= 4, z;
-  double a = 3.1;
-  z = manip(x) + manip(x, y) + manip(y, a);
-  cout << z << endl;
-  return 0;
-}
-int manip(int val)
-{
-  return val + val * 2;
-}
-int manip(int val1, int val2)
-{
-  return (val1 + val2) * 2;
-}
-int manip(int val1, double val2)
-{
-  return val1 * static_cast<int>(val2);
-}
+Sample Run:
 ```
-Q18. Design a recursive function to calculate the summation of all integers from 1 to `n` (`n`>=1).
+This program will find the average number of hours a day that a student spent programming over a long weekend
 
-Q19. When an array name is passed to a function, what is actually being passed?
+How many students are there?
+2
+Enter the number of days in the long weekend
+2
 
-Q20. When used as function arguments, are arrays passed by value?
+Please enter the number of hours worked by student 1 on day 1
+4
 
-Q21. What is the output of the following program? 
-``` cpp
+Please enter the number of hours worked by student 1 on day 2
+6
 
-#include <iostream>
-using namespace std;
-// Function prototypes
-void fillArray(char [], int);
-void showArray(const char [], int);
-int main ()
-{
-  const int SIZE = 8;
-  char prodCode[SIZE] = {'0', '0', '0', '0', '0', '0', '0', '0'};
-  fillArray(prodCode, SIZE);
-  showArray(prodCode, SIZE);
-  return 0;
-}
-// Definition of function fillArray.
-// (Hint: 65 is the ASCII code for 'A')
-void fillArray(char arr[], int size)
-{
-char code = 65;
-  for (int k = 0; k < size; code++, k++)
-      arr[k] = code;
-}
-// Definition of function showArray.
-void showArray(const char codes[], int size)
-{
-  for (int k = 0; k < size; k++)
-      cout << codes[k];
-  cout << endl;
-}
+The average number of hours per day spent programming by student 1 is 5
+
+
+Please enter the number of hours worked by student 2 on day 1
+9
+
+Please enter the number of hours worked by student 2 on day 2
+13
+
+The average number of hours per day spent programming by student 2 is 11
 ```
 
-Q22. The following program skeleton, when completed, will ask the user to enter 10 integers, which are stored in an array. The function avgArray , which you must
-write, is to calculate and return the average of the numbers entered.
-``` cpp
-#include <iostream>
-using namespace std;
-// Write your function prototype here
-int main()
-{
-  const int SIZE = 10;
-  int userNums[SIZE];
-  cout << "Enter 10 numbers: ";
-  for (int count = 0; count < SIZE; count++)
-  {
-    cout << "#" << (count + 1) << " ";
-    cin >> userNums[count];
-  }
-  cout << "The average of those numbers is ";
-  cout << avgArray(userNums, SIZE) << endl;
-  return 0;
-}
-//
-// Write the function avgArray here.
-//
+Q19. Modify the program from Q18 so that it also finds the average number of hours per day that a given student studies biology as well as programming. For each given student include two prompts, one for each subject. Have the program print out which subject the student, on average, spent the most time on.
+
+Q20. Using C++ style string to write a program that reads a sentence as input and converts each word of the sentence following the rule below:
+
+- For every word in the sentence, the first letter is relocated the end of the word.
+- Then append the string “KPU” to the word. 
+
+More requirements:
+- All letters in the output should be uppercase. 
+
+More assumptions:
+- The input sentence contains no non-alphabetic letters
+
+Sample Run:
+
+```
+Please enter the original sentence: i LOVE to program
+Translated: IKPU OVELKPU OTKPU ROGRAMPKPU
 ```
 
-# Homework
-
-Q23. In a program, write a function that accepts three arguments: an array, the size of the array, and a number `n` . Assume that the array contains integers. The function should
-display all of the numbers in the array that are greater than the number `n`. Write two test cases in the `main` function to verify the function you wrote. 
-
-Q24. Write a function that accept one positive integer argument and returns true if the argument is a prime number, or false otherwise. Write two test cases in the `main` function to verify the function you wrote. 
-
-For the definition of prime number, you can refer to the wikipedia: https://en.wikipedia.org/wiki/Prime_number
-
-Further explanation of the prime number: 
-- 7 is prime because it can **only** be evenly divided by 1 and 7.  
-- 4 is not prime because it can be divided evenly by 1, 2, 4. 
