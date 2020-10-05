@@ -130,6 +130,7 @@ int main()
 Q9. What is the difference between a static local variable and a global variable?
 
 Q10. What is the output of the following program?
+``` cpp
 #include <iostream>
 using namespace std;
 void myFunc(); // Function prototype
@@ -147,6 +148,8 @@ void myFunc()
 int var = 50;
 cout << var << endl;
 }
+```
+
 Q11. What is the output of the following program?
 ```cpp
 #include <iostream>
