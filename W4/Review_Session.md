@@ -302,6 +302,8 @@ void func3(int a, int b, int c)
 ```
 
 Q17. What is the output of the following program?
+
+```cpp
 #include <iostream>
 using namespace std;
 int manip(int);
@@ -327,7 +329,7 @@ int manip(int val1, double val2)
 {
   return val1 * static_cast<int>(val2);
 }
-
+```
 Q18. Design a recursive function to calculate the summation of all integers from 1 to `n` (`n`>=1).
 
 Q19. When an array name is passed to a function, what is actually being passed?
