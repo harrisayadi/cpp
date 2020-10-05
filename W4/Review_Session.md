@@ -182,11 +182,12 @@ Q14. Write the prototype and header for a function called `calculate` . The func
 argument, which is 47.
 
 Q15. What is the output of the following program?
+
 ``` cpp
 #include <iostream>
 using namespace std;
 void test(int = 2, int = 4, int = 6);
-```
+
 int main()
 {
   test();
