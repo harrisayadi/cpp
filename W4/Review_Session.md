@@ -58,6 +58,44 @@ showNum(45.67);
 Q5. Write a function named `timesTen` . The function should have an integer parameter named `number` . When `timesTen` is called, it should display the product of number times ten. ( Note : just write the function. Do not write a
 complete program.)
 
+<details>
+
+<summary> Click me to show the code below!</summary>
+
+``` cpp
+//Write a function named timesTen . 
+//The function should have an integer parameter named number . 
+//When timesTen is called, it should display the product of number times ten. 
+
+
+#include <iostream>
+using namespace std;
+
+void timesTen(int);
+
+
+
+int main()
+{
+  int inputNumber{};
+  cout << "Enter a number plz:\n";
+  cin >> inputNumber;
+  timesTen(inputNumber);
+	
+	
+  return 0;
+}
+
+void timesTen(int number){
+	
+	
+	cout << number*10 << endl;
+	
+	
+}```
+</details>
+
+
 Q5. Write a function prototype for the `timesTen` function you wrote in Q5.
 
 Q6. What is the output of the following program?
