@@ -147,7 +147,15 @@ return 0;
 // Write the function convert here.
 //
 ```
+<details>
 
+<summary> Click me to show the code below!</summary>
+
+``` cpp
+
+
+```
+</details>
 Q11. Look at the following array definition:
 ``` cpp
 const int numbers[SIZE] = { 18, 17, 12, 14 };
