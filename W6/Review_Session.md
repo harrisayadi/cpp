@@ -180,8 +180,10 @@ void convert(double * ptr ){
 ```
 </details>
 Q11. Look at the following array definition:
+
 ``` cpp
 const int numbers[SIZE] = { 18, 17, 12, 14 };
+
 ```
 Suppose we want to pass the array to the function processArray in the following manner:
 ``` cpp
