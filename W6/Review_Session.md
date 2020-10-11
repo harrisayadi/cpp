@@ -221,31 +221,28 @@ int x, *ptr = nullptr;
 ``` cpp
 int x, *ptr = nullptr;
 ptr = &x;
-```
-5)
-``` cpp
 ptr = 100; // Store 100 in x
 cout << x << endl;
 ```
-6) 
+5) 
 ``` cpp
 int numbers[] = {10, 20, 30, 40, 50};
 cout << "The third element in the array is ";
 cout << *numbers + 3 << endl;
 ```
-7)
+6)
 ``` cpp
 int values[20], *iptr = nullptr;
 iptr = values;
 iptr *= 2;
 ```
-8)
+7)
 ``` cpp
 float level;
 int fptr = &level;
 ```
 
-9) 
+8) 
 ``` cpp
 int *iptr = &ivalue;
 int ivalue;
