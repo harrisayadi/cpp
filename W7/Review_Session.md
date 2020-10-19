@@ -95,7 +95,7 @@ C) `soap.setPrice(1.49);`
 </details>
 
 
-Q6. Briefly describe the purpose of a constructor.
+Q5. Briefly describe the purpose of a constructor.
 
 <details>
 
@@ -107,7 +107,7 @@ A constructor is a member function that has the same name as the class. It is au
 </details>
 
 
-Q7. Briefly describe the purpose of a destructor.
+Q6. Briefly describe the purpose of a destructor.
 
 <details>
 
@@ -122,7 +122,7 @@ In addition to the fact that destructors are automatically called when an object
 </details>
 
 
-Q8. A member function that is never declared with a return data type, but that may have arguments is
+Q7. A member function that is never declared with a return data type, but that may have arguments is
 
 A) The constructor
 
@@ -140,7 +140,7 @@ A)
 
 </details>
 
-Q9. A member function that is never declared with a return data type and can never have arguments is
+Q8. A member function that is never declared with a return data type and can never have arguments is
 
 A) The constructor
 
@@ -159,7 +159,7 @@ B)
 </details>
 
 
-Q10. Destructor function names always start with
+Q9. Destructor function names always start with
 
 A) A number
 
@@ -178,7 +178,7 @@ B)
 </details>
 
 
-Q11. A constructor that requires no arguments is called
+Q10. A constructor that requires no arguments is called
 
 A) A default constructor
 
@@ -213,7 +213,7 @@ This statement defines a `Sale` object. No arguments were passed to the construc
 
 
 
-Q12. TRUE or FALSE: Constructors are never declared with a return data type.
+Q11. TRUE or FALSE: Constructors are never declared with a return data type.
 
 <details>
 
@@ -223,7 +223,7 @@ True
 
 </details>
 
-Q13. TRUE or FALSE: Destructors are never declared with a return type.
+Q12. TRUE or FALSE: Destructors are never declared with a return type.
 
 <details>
 
@@ -234,7 +234,7 @@ True
 </details>
 
 
-Q14. TRUE or FALSE: Destructors may take any number of arguments.
+Q13. TRUE or FALSE: Destructors may take any number of arguments.
 
 <details>
 
@@ -245,7 +245,7 @@ False
 </details>
 
 
-Q16. What will the following program display on the screen?
+Q14. What will the following program display on the screen?
 ``` cpp
 #include <iostream>
 using namespace std;
@@ -264,65 +264,99 @@ class Package
 int main()
 {
   Package obj1(4);
-  Package obj2();
+  Package obj2;
   Package obj3(2);
   return 0;
 }
 ```
-Q17. In your answer for Q16. indicate for each line of output whether the line is displayed by constructor #1, constructor #2, or the destructor.
 
-Q18. Why would a member function be declared private?
+<details>
 
-Q19. Define an array of three InventoryItem objects.
-
-Q20. Complete the following program so it defines an array of `Yard` objects. The program should use a loop to ask the user for the length and width of each `Yard` .
-``` cpp
-#include <iostream>
-using namespace std;
-class Yard
-{
-private:
-int length, width;
-public:
-Yard()
-{ length = 0; width = 0; }
-setLength(int len)
-{ length = len; }
-setWidth(int w)
-{ width = w; }
-};
-int main()
-{
-// Finish this program
-}
- 
+<summary> Click me to show the answer below!</summary>
 ```
+4
+7
+2
+2
+7
+4
+```
+</details>
 
-Q21. What is the difference between an instance member variable and a static member variable?
 
-Q22. Static member variables are declared inside the class declaration. Where are static member variables defined?
+Q15. In your answer for Q14. indicate for each line of output whether the line is displayed by constructor #1, constructor #2, or the destructor.
 
-Q23. Does a static member variable come into existence in memory before, at the same time as, or after any instances of its class?
+<details>
 
-Q24. What limitation does a static member function have?
+<summary> Click me to show the answer below!</summary>
+```
+4   Constructor #2
+7   Constructor #1
+2   Constructor #2
+2   Destructor
+7   Destructor
+4   Destructor
+```
+</details>
 
-Q25. What action is possible with a static member function that isn’t possible with an instance member function?
+Q16. Why would a member function be declared private?
 
-Q26. If class X declares function f as a friend, does function f become a member of class X ?
+<details>
 
-Q27. Class Y is a friend of class X , which means the member functions of class Y have access to the private members of class X . Does the friend keyword appear in
-class Y ’s declaration or in class X ’s declaration?
+<summary> Click me to show the answer below!</summary>
 
-Q28. Briefly describe what is meant by memberwise assignment.
+Private member function may only be called from a function that is a member of the same class. Sometimes a class will contain one or more member functions that are necessary for internal processing, but should not be called by code outside the class. For example, a class might have a member function that performs a calculation only when a value is stored in a particular member variable and should not be performed at any other time. That function should not be directly accessible by code outside the class because it might get called at the wrong time. In this case, the member function should be declared private . When a member function is declared private , it may only be called internally.
 
-Q29. Describe two instances when memberwise assignment occurs.
+</details>
 
-Q30. Describe a situation in which memberwise assignment should not be used.
 
-Q31. When is a copy constructor called?
+Q17. What is the difference between an instance member variable and a static member variable?
 
-Q32. How does the compiler know that a member function is a copy constructor?
+<details>
 
-Q33. What action is performed by a class’s default copy constructor?
+<summary> Click me to show the answer below!</summary>
+When a member variable is declared with the key word static , there will be only one copy of the member variable in memory, regardless of the number of instances of the class that might exist. A single copy of a class’s static member variable is shared by all instances of the class.
+</details>
+
+Q18. Static member variables are declared inside the class declaration. Where are static member variables defined?
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+Outside of the class definition. For example,
+
+``` cpp
+ // Tree class
+class Tree
+ {
+ private:
+  static int objectCount; // Static member variable.
+ public:
+  // Constructor
+  Tree()
+  { objectCount++; }
+  // Accessor function for objectCount
+   int getObjectCount() const
+   { return objectCount; }
+ };
+
+  // Definition of the static member variable, written
+   // outside the class.
+   int Tree::objectCount = 0;
+```
+</details>
+
+
+Q19. If class X declares function f as a friend, does function f become a member of class X ?
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+No.
+</details>
+
+
   
   
