@@ -302,6 +302,7 @@ Q15. In your answer for Q14. indicate for each line of output whether the line i
 <details>
 
 <summary> Click me to show the answer below!</summary>
+
 4   Constructor #2
 
 7   Constructor #1
