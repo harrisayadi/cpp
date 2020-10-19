@@ -280,7 +280,7 @@ int main()
 <details>
 
 <summary> Click me to show the answer below!</summary>
-```
+``` cpp
 4
 7
 2
@@ -296,7 +296,7 @@ Q15. In your answer for Q14. indicate for each line of output whether the line i
 <details>
 
 <summary> Click me to show the answer below!</summary>
-```
+``` cpp
 4   Constructor #2
 7   Constructor #1
 2   Constructor #2
