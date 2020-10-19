@@ -1,5 +1,12 @@
+
+# Review Session for Section 13
+
+## Correction and Clarification
+C1. You may wonder about the 7:25 of Section 150. You can refer to
+
 https://www.udemy.com/course/beginning-c-plus-plus-programming/learn/lecture/9535596#questions/8327306
 
+## Review Questions
 
 Q1. True or False: You must declare all private members of a class before the public members.
 
@@ -357,6 +364,16 @@ Q19. If class X declares function f as a friend, does function f become a member
 No.
 </details>
 
+# Homework
+
+Q20 Write a class declaration named Cylinder  with a private member variable named `radius` and `height` . Write set and get functions to access the `radius` and `height` variables, and a function named `getVolume` that returns the volume of the Cylinder. The volume is calculated as
+```
+3.14159 * radius * radius * height
+```
+Q21. Design a `PayRoll` class that has data members for an employee’s hourly pay rate, number of hours worked, and total pay for the week. Write a program with an array of
+seven PayRoll objects. The program should ask the user for the number of hours each employee has worked and will then display the amount of gross pay each has earned.
+
+Please conduct Input Validation and do not accept values greater than 60 for the number of hours worked.
 
   
   
