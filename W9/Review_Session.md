@@ -161,7 +161,7 @@ setC
 <summary> Click me to show the answer below!</summary>
 
 
-![](Capture.png)
+![](./Capture.png)
 The answer can be easily found by referring to the image above. 
 </details>
 
