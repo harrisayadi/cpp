@@ -10,10 +10,25 @@ Q1. Here is the first line of a class declaration. Circle the name of the base c
 ``` cpp
 class Truck : public Vehicle
 ```
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+```Vehicle```
+</details>
+
+
 Q2. Circle the name of the derived class in the following declaration line:
 ``` cpp
 class Truck : public Vehicle
 ```
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+```Truck```
+</details>
 Q3. Suppose a program has the following class declarations:
 ``` cpp
 class Shape
@@ -41,11 +56,39 @@ class Circle : public Shape
 
 Answer the following questions concerning these classes:
 
-A) When an object of the Circle class is created, what are its private members?
+A) When an object of the `Circle` class is created, what are its private members?
 
-B) When an object of the Circle class is created, what are its public members?
+<details>
 
-C) What members of the Shape class are not accessible to member functions of the `Circle class`?
+<summary> Click me to show the answer below!</summary>
+
+```radius```
+</details>
+
+
+B) When an object of the `Circle` class is created, what are its public members?
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+```
+setArea
+getArea
+setRadius
+getRadius
+```
+</details>
+C) What members of the `Shape` class are not accessible to member functions of the `Circle class`?
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+```
+area
+```
+</details>
 
 Q4. Suppose a program has the following class declaration:
 ``` cpp
@@ -78,6 +121,22 @@ setA
 setB
 setC
 ```
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+``` cpp
+a 
+b
+c
+setA
+setB
+setC
+```
+</details>
+
+
 
 B) Suppose the `Quiz` class, derived from the `CheckPoint` class, is declared as
 ```cpp
