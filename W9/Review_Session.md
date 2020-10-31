@@ -29,7 +29,9 @@ class Truck : public Vehicle
 
 ```Truck```
 </details>
+
 Q3. Suppose a program has the following class declarations:
+
 ``` cpp
 class Shape
 {
@@ -72,13 +74,14 @@ B) When an object of the `Circle` class is created, what are its public members?
 
 <summary> Click me to show the answer below!</summary>
 
-```
+``` cpp
 setArea
 getArea
 setRadius
 getRadius
 ```
 </details>
+
 C) What members of the `Shape` class are not accessible to member functions of the `Circle class`?
 
 <details>
@@ -122,20 +125,6 @@ setB
 setC
 ```
 
-<details>
-
-<summary> Click me to show the answer below!</summary>
-
-``` cpp
-a 
-b
-c
-setA
-setB
-setC
-```
-</details>
-
 
 
 B) Suppose the `Quiz` class, derived from the `CheckPoint` class, is declared as
@@ -167,11 +156,30 @@ setA
 setB
 setC
 ```
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+
+![](Capture.png)
+The answer can be easily found by referring to the image above. 
+</details>
+
+
+
 D) Suppose the `Quiz` class, derived from the `CheckPoint` class, is declared as
 ``` cpp
 class Quiz : Checkpoint
 ```
 Is the `CheckPoint` class a private , public , or protected base class?
+
+<details>
+
+<summary> Click me to show the answer below!</summary>
+
+Private
+</details>
+
 
 Q5. What will the following program display?
 ``` cpp
