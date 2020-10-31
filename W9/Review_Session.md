@@ -267,7 +267,7 @@ Leaving the sky.
 
 # Assignment 
 
-A1. Design a class named `Student` . The class should keep the following information in
+Q7. Design a class named `Student` . The class should keep the following information in
 - Student name (a String)
 - Student number (a String)
 - Student Age (an int)
