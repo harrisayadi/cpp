@@ -255,7 +255,7 @@ return 0;
 
 Some Explanation：This is a tricky question. Something we need to pay attention to here:
 
-- `getVar()` member function in the Base class is not a virtual function, thus cannot be overidden. In this case, dynamically bounding cannot be conducted. 
+- `getVar()` member function in the Base class is not a virtual function. In this case, dynamically bounding cannot be conducted. 
 - optr is of type `Base`
 
 So the `getVar()` of the Base class will be called, giving us 2 instead of 100. If you add `virtual` keyword to the `getVar()` function in the Base class, you will get 100 instead. 
