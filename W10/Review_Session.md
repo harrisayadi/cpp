@@ -1,4 +1,4 @@
-# Review Session for Section 15
+# Review Session for Section 16
 
 ## Correction and Clarification
 
