@@ -2,13 +2,12 @@
 
 ## Correction and Clarification
 
-Don't force yourself to memorize the syntax of file, streamand I/O operations. 
+Don't force yourself to memorize the syntax of file, stream and I/O operations we learned this week. Just familiarize yourself with them. 
 
 ## Review Questions
 
 
 Q1. How do you use more than one file access flag?
-
 
 <details>
 
