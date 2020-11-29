@@ -10,14 +10,6 @@
 // Online C++ compiler to run C++ online.
 // Write C++ code in this online editor and run it.
 
-#include <iostream>
-
-int main() {
-    std:cout << "Hello World!";
-  
-  return 0;
-}
-
 ```
 
 2. **What bug does the original code have?**
